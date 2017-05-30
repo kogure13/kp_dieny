@@ -1,11 +1,11 @@
 <div class="header">            
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 hidden-sm hidden-xs">
+            <div class="col-sm-4 hidden-sm hidden-xs">
                 <div class="logo"></div>
             </div>
-            <div class="col-sm-6">
-                <nav class="navbar">
+            <div class="col-sm-8">
+                <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -21,15 +21,30 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">            
                             <ul class="nav navbar-nav navbar-right">
-                                <li>                                    
-                                    <a href="#" class="clikedMenu" id="daftar-mahasiswa">Daftar Mahasiswa</a>
-                                </li>
-                                <li>                                    
-                                    <a href="#" class="clikedMenu" id="dokumen-sidang">Dokumen Sidang</a>
-                                </li>
-                                <li>                                    
-                                    <a href="#" class="clikedMenu" id="dokumen-wisuda">Dokumen Wisuda</a>
-                                </li>
+                                <?php if (isset($_SESSION['user_unnur'])) { ?>
+                                    <li>                                    
+                                        <a href="#" class="clikedMenu" id="data-mahasiswa">Data Mahasiswa</a>
+                                    </li>
+                                    <li>                                    
+                                        <a href="#" class="clikedMenu" id="dokumen-sidang">Dokumen Sidang</a>
+                                    </li>
+                                    <li>                                    
+                                        <a href="#" class="clikedMenu" id="dokumen-wisuda">Dokumen Wisuda</a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#" class="clikedMenu" id="logout">
+                                            <i class="fa fa-sign-out fa-fw"></i>
+                                            Logout
+                                        </a>
+                                    </li>
+                                <?php } else { ?>
+                                    <li>
+                                        <a href="#" class="clikedMenu" id="login">
+                                            <i class="fa fa-sign-in fa-fw"></i>
+                                            login
+                                        </a>
+                                    </li>
+                                <?php } ?>
                                 <li>                                    
                                     <a href="#" class="clikedMenu" id="hubungi-kami">Hubungi Kami</a>
                                 </li>
@@ -41,3 +56,4 @@
         </div>
     </div>
 </div>
+
