@@ -4335,6 +4335,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 
 .nav-tabs {
     border-bottom: 1px solid #dddddd;
+    margin-bottom: 15px;
 }
 
     .nav-tabs > li {
@@ -4647,7 +4648,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     padding: 9px 10px;
     margin-top: 8px;
     margin-bottom: 8px;
-    background-color: transparent;
+    background-color: #ad3a12;
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;

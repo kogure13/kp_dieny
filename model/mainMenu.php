@@ -23,30 +23,30 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <?php if (isset($_SESSION['user_unnur'])) { ?>
                                     <li>                                    
-                                        <a href="#" class="clikedMenu" id="data-mahasiswa">Data Mahasiswa</a>
+                                        <a href="#" id="data-mahasiswa">Data Mahasiswa</a>
                                     </li>
                                     <li>                                    
-                                        <a href="#" class="clikedMenu" id="dokumen-sidang">Dokumen Sidang</a>
+                                        <a href="#" id="dokumen-sidang">Dokumen Sidang</a>
                                     </li>
                                     <li>                                    
-                                        <a href="#" class="clikedMenu" id="dokumen-wisuda">Dokumen Wisuda</a>
+                                        <a href="#" id="dokumen-wisuda">Dokumen Wisuda</a>
                                     </li>                                
                                     <li>
-                                        <a href="#" class="clikedMenu" id="logout">
+                                        <a href="#" id="logout">
                                             <i class="fa fa-sign-out fa-fw"></i>
                                             Logout
                                         </a>
                                     </li>
                                 <?php } else { ?>
                                     <li>
-                                        <a href="#" class="clikedMenu" id="login">
+                                        <a href="?page=login" id="login-menu">
                                             <i class="fa fa-sign-in fa-fw"></i>
                                             login
                                         </a>
                                     </li>
                                 <?php } ?>
                                 <li>                                    
-                                    <a href="#" class="clikedMenu" id="hubungi-kami">Hubungi Kami</a>
+                                    <a href="?page=kontak" id="hubungi-kami">Kontak Kami</a>
                                 </li>
                             </ul>
                         </div><!-- /.navbar-collapse -->

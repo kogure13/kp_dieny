@@ -1,5 +1,5 @@
         
-        <title>Form Pendaftaran</title>
+        <title>Pendaftaran Sidang Online - Universitas Nurtanio Bandung</title>
         <link rel="shortcut icon" href="favicon.png">
         <!-- Meta -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

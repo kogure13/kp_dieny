@@ -27,13 +27,15 @@ class Database {
 class Main {
     function getPage() {
         if (!isset($_GET['page'])) {
-            include_once 'view/home.php';
+            include_once 'view/dashboard.php';
         } else {
             $page = htmlentities($_GET['page']);
             $pageRoot = "view/" . $page . ".php";
 
             if (file_exists($pageRoot)) {
                 include_once $pageRoot;            
+            } elseif ($page == "login") {
+                include_once 'model/login.php';
             } elseif ($page == "logout") {
                 $user = new User();
                 $user->logout();
@@ -56,10 +58,5 @@ class Main {
     function getMenu() {
         include 'model/mainMenu.php';
         return;
-    }
-    
-    function getContent() {
-        include 'model/content.php';
-        return;
-    }
+    }        
 }

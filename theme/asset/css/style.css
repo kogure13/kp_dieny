@@ -9,9 +9,12 @@ body{
 footer{
     position: fixed;
     bottom: 0;
-    width: 100%;        
+    width: 100%;    
+    margin-top: 20px;    
 }
-
+.error {
+    color: #fc5a53;
+}
 .header{
     width: auto;
     height: 70px;
@@ -28,9 +31,10 @@ footer{
 }
 .content{
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 .top{
-    background-color: #b61a1a;
+    background-color: #083c87;
     height: 78px;
     font-size: 20px;
     font-weight: bold;
@@ -64,20 +68,16 @@ footer{
     color: #000;
     font-size: 13px;
 }
-.right-box{
-    margin: 20px 0px 20px 10px;
-    background-color: #fff;
-    padding: 20px 30px;
+.right-box {    
+    background-color: #fff;    
     -webkit-box-shadow: 2px 4px 1px #eeeeee;
     -moz-box-shadow: 2px 4px 1px #eeeeee;
-    box-shadow: 2px 4px 1px #eeeeee;
-    width: 20%;
-    float: left;
-    color: #000;
+    box-shadow: 2px 4px 1px #eeeeee;    
+    min-height: 400px;    
     font-size: 13px;
 }
 .footer{
-    background-color: #b61a1a;
+    background-color: #6b6b6b;
     padding: 10px 12px;
     height: 40px;
     color: #fff;
