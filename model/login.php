@@ -43,12 +43,7 @@
                     <input type="password" class="form-control input-sm" id="password" name="password">
                 </div>
             </div>
-            <div class="form-group">
-                <label for="con_pass" class="col-sm-3 control-label">Confirm Password</label>
-                <div class="col-sm-4">
-                    <input type="password" class="form-control input-sm" id="con_pass" name="con_pass">
-                </div>
-            </div>
+            
             <div class="form-group">
                 <label for="email" class="col-sm-3 control-label">E-mail</label>
                 <div class="col-sm-4">

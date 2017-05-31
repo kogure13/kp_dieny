@@ -1,17 +1,3 @@
-$(document).ready(function () {
-    $('#btn-daftar').on('click', function () {
-        var pass1 = $('#password').val();
-        var pass2 = $('#con_pass').val();
-
-        if (pass1 !== pass2) {
-            $('#con_pass').focus();
-            swal("Warning", "Password not match", "warning");            
-            return;
-        }
-                
-    });
-});
-
 $(function () {
     $('#login_form').validate({
         rules: {
@@ -51,12 +37,7 @@ $(function () {
                 required: true,
                 pwcheck: /^[A-Za-z0-9\d=!\-@._*]+$/,
                 minlength: 8
-            },
-            con_pass: {
-                required: true,
-                pwcheck: /^[A-Za-z0-9\d=!\-@._*]+$/,
-                minlength: 8
-            },
+            },            
             email: {
                 required: true
             }
@@ -70,22 +51,34 @@ $(function () {
                 required: 'Password cannot empty',
                 pwcheck: 'at least capital, lower and numeric allowed',
                 minlength: 'min 8 characters'
-            },
-            con_pass: {
-                required: 'Confirm Password cannot empty',
-                pwcheck: 'at least capital, lower and numeric allowed',
-                minlength: 'min 8 characters'
-            },
+            },            
             email: {
                 required: 'Email cannot empty'
             }
         },
         submitHandler: function (form) {
-            
+            ajaxAction('registrasi');
         }
     });
-    
+
     $.validator.addMethod("pwcheck", function (value, element, regexpr) {
         return regexpr.test(value);
     });
 });
+
+function ajaxAction(action) {
+    data = $('#'+action+'_form').serializeArray();  
+    console.log(data)
+    
+    $.ajax({
+        type: 'POST',
+        url: 'application/login/data_login.php',
+        data: data,
+        dataType: 'json',
+        success: function(response){
+            document.location.href = index.php;
+            swal("Success", "Regristation success", "success");            
+            return;
+        }
+    });
+}

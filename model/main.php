@@ -32,7 +32,13 @@
                                 Informasi Sidang dan Wisuda
                             </div>
                             <div class="panel-body">
-                                
+                                <span class="text-muted">Jadwal Sidang T.A 2016/2017</span>
+                                <ol style="margin-left: -25px">
+                                    <li>Gelombang 1 : 19 April 2017</li>
+                                    <li>Gelombang 1 : 19 April 2017</li>
+                                    <li>Gelombang 1 : 19 April 2017</li>
+                                    <li>Gelombang 1 : 19 April 2017</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
