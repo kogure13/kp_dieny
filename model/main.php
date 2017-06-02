@@ -35,9 +35,10 @@
                                 <span class="text-muted">Jadwal Sidang T.A 2016/2017</span>
                                 <ol style="margin-left: -25px">
                                     <li>Gelombang 1 : 19 April 2017</li>
-                                    <li>Gelombang 1 : 19 April 2017</li>
-                                    <li>Gelombang 1 : 19 April 2017</li>
-                                    <li>Gelombang 1 : 19 April 2017</li>
+                                    <li>Gelombang 2 : 17 Mei 2017</li>
+                                    <li>Gelombang 3 : 19 Juli 2017</li>
+                                    <li>Gelombang 4 : 19 Agustus 2017</li>
+                                    <li>Gelombang 5 : 20 September 2017</li>
                                 </ol>
                             </div>
                         </div>

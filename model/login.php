@@ -29,29 +29,30 @@
             </div>
         </form>
     </div>
+    
     <div role="tabpanel" class="tab-pane" id="registrasi">
         <form class="form-horizontal" id="registrasi_form" name="registrasi_form">
             <div class="form-group">
-                <label for="nim" class="col-sm-3 control-label">NIM</label>
+                <label for="nim" class="col-sm-2 control-label">NIM</label>
                 <div class="col-sm-3">
                     <input type="text" class="form-control input-sm" id="nim" name="nim">
                 </div>
             </div>
             <div class="form-group">
-                <label for="password" class="col-sm-3 control-label">Password</label>
+                <label for="password" class="col-sm-2 control-label">Password</label>
                 <div class="col-sm-4">
                     <input type="password" class="form-control input-sm" id="password" name="password">
                 </div>
             </div>
             
             <div class="form-group">
-                <label for="email" class="col-sm-3 control-label">E-mail</label>
+                <label for="email" class="col-sm-2 control-label">E-mail</label>
                 <div class="col-sm-4">
                     <input type="email" class="form-control input-sm" id="email" name="email">
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-sm-offset-3 col-sm-10">
+                <div class="col-sm-offset-2 col-sm-10">
                     <button type="submit" class="btn btn-sm btn-primary" id="btn-daftar">Daftar</button>
                 </div>
             </div>

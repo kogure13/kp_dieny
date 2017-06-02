@@ -1,5 +1,5 @@
 <?php
-session_start('user_unnur');
+session_start();
 
 include 'inc/class.php';
 $main = new Main();

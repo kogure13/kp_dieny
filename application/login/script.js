@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function(){
     $('#login_form').validate({
         rules: {
             nim: {
@@ -23,7 +23,7 @@ $(function () {
             }
         },
         submitHandler: function (form) {
-            $('#login_form').trigger('reset');
+            ajaxAction('login');            
         }
     });
 
@@ -67,18 +67,21 @@ $(function () {
 });
 
 function ajaxAction(action) {
-    data = $('#'+action+'_form').serializeArray();  
+    if(action == "registrasi") {
+        data = $('#registrasi_form').serializeArray();
+    }else if(action == "login") {
+        data = $('#login_form').serializeArray();
+    }
+    
     console.log(data)
     
     $.ajax({
-        type: 'POST',
         url: 'application/login/data_login.php',
-        data: data,
+        type: 'POST',
         dataType: 'json',
+        data: data,        
         success: function(response){
-            document.location.href = index.php;
-            swal("Success", "Regristation success", "success");            
-            return;
+            document.location.href = '?page=daftar';
         }
     });
 }

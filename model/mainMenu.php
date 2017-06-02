@@ -32,7 +32,7 @@
                                         <a href="#" id="dokumen-wisuda">Dokumen Wisuda</a>
                                     </li>                                
                                     <li>
-                                        <a href="#" id="logout">
+                                        <a href="?page=logout" id="logout">
                                             <i class="fa fa-sign-out fa-fw"></i>
                                             Logout
                                         </a>

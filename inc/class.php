@@ -62,18 +62,9 @@ class Main {
 }
 
 class User {
-    protected $conn;
-    protected $data = [];
     
-    function __construct($connString) {
-        $this->conn = $connString;
-    }
-            
-    function getDaftar() {
-       $sql = "insert into mhs_data ";
-       $sql .= " (nim, email)";
-       $sql .= " VALUES ('".$params['nim']."', '".addcslashes($params['email'])."')";
-       
-       echo $result = mysqli_query($this->conn, $sql) or die("error to insert data");
+    function logout() {
+        session_destroy();
+        echo '<meta http-equiv="refresh" content="0;url=index.php">';
     }
 }
