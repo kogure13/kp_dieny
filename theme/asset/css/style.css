@@ -83,3 +83,17 @@ footer{
     color: #fff;
     text-align: center;
 }
+
+.flexigrid div.fbutton .add {
+    background: url('../images/add.png') no-repeat center left;
+}
+.flexigrid div.fbutton .edit {
+    background: url('../images/edit.png') no-repeat center left;
+}
+.flexigrid div.fbutton .delete {
+    background: url('../images/close.png') no-repeat center left;    
+}
+
+.btn-hidden {
+    display: none;
+}

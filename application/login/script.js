@@ -67,12 +67,7 @@ $(document).ready(function(){
 });
 
 function ajaxAction(action) {
-    if(action == "registrasi") {
-        data = $('#registrasi_form').serializeArray();
-    }else if(action == "login") {
-        data = $('#login_form').serializeArray();
-    }
-    
+    data = $("#"+action+"_form").serializeArray();        
     console.log(data)
     
     $.ajax({
@@ -81,7 +76,10 @@ function ajaxAction(action) {
         dataType: 'json',
         data: data,        
         success: function(response){
-            document.location.href = '?page=daftar';
+            $('#'+action+'_form').trigger('reset');
+            
+            swal("Success", "Cek email untuk konfirmasi", "success");
+            return;
         }
     });
 }

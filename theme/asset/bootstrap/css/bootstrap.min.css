@@ -1359,10 +1359,10 @@ html {
 
 body {
     font-family: "Ubuntu",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 12px;
+    font-size: 12pt;
     line-height: 1.42857143;
-    color: #333333;
-    background-color: #ffffff;
+    color: #111;
+    background-color: #fff;
 }
 
 input, button, select, textarea {

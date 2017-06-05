@@ -2,10 +2,10 @@
 
 class Database {
 
-    var $DB_Host = "192.168.0.128";
+    var $DB_Host = "localhost";
     var $DB_Name = "kp_dieny";
     var $DB_User = "root";
-    var $DB_Pass = "!AIS_admin007";
+    var $DB_Pass = "";
     var $conn;
 
     function getConstring() {
@@ -59,12 +59,4 @@ class Main {
         include 'model/mainMenu.php';
         return;
     }        
-}
-
-class User {
-    
-    function logout() {
-        session_destroy();
-        echo '<meta http-equiv="refresh" content="0;url=index.php">';
-    }
 }
